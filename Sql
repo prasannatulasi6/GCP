@@ -1,0 +1,5 @@
+-- query_1.sql
+SELECT customer_id, SUM(purchase_amount) as total_purchase
+FROM `my_project.my_dataset.sales_data`
+WHERE purchase_date BETWEEN '2024-01-01' AND '2024-12-31'
+GROUP BY customer_id
